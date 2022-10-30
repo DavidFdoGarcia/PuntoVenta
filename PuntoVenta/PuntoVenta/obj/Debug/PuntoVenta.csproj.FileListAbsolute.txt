@@ -11,3 +11,17 @@ G:\Programas\REPOSITORIOS\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.
 G:\Programas\REPOSITORIOS\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.exe
 G:\Programas\REPOSITORIOS\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.pdb
 G:\Programas\REPOSITORIOS\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CrudArticulo.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\bin\Debug\PuntoVenta.exe.config
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\bin\Debug\PuntoVenta.exe
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\bin\Debug\PuntoVenta.pdb
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.csprojAssemblyReference.cache
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.Base.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CrudArticulo.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CrudArticulos.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.login.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.Properties.Resources.resources
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.csproj.GenerateResource.cache
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.csproj.CoreCompileInputs.cache
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.exe
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.pdb
+C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CambiarConexion.resources

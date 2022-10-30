@@ -27,5 +27,11 @@ namespace PuntoVenta.CapaPresentacion
             CrudArticulo CA = new CrudArticulo();
             CA.Show();
         }
+
+        private void btnCambiar_Click(object sender, EventArgs e)
+        {
+            CambiarConexion ca = new CambiarConexion();
+            ca.Show();
+        }
     }
 }

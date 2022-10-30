@@ -55,6 +55,12 @@
     <Compile Include="CapaPresentacion\Base.Designer.cs">
       <DependentUpon>Base.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaPresentacion\CambiarConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\CambiarConexion.Designer.cs">
+      <DependentUpon>CambiarConexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaPresentacion\CrudArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CapaPresentacion\Base.resx">
       <DependentUpon>Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPresentacion\CambiarConexion.resx">
+      <DependentUpon>CambiarConexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\CrudArticulo.resx">
       <DependentUpon>CrudArticulo.cs</DependentUpon>

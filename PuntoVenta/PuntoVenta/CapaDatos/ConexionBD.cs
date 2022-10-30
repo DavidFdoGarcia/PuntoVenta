@@ -34,5 +34,16 @@ namespace PuntoVenta.CapaDatos
                 Conexion.Close();
             return Conexion;
         }
+
+        public static void cambiarConexion(string cadenaConex)
+        {
+            String cadenaNueva = cadenaConex;
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            config.ConnectionStrings.ConnectionStrings["PuntoVenta.Properties.Settings.PuntoVentaConnectionString"].ConnectionString = cadenaNueva;
+            config.Save(ConfigurationSaveMode.Modified, true);
+            Properties.Settings.Default.Save();
+            MessageBox.Show("LA CADENA DE CONEXION SE ACTUALIZO CORRECTAMENTE", "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Application.Restart();
+        }
     }
 }

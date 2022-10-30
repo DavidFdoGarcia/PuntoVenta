@@ -78,10 +78,12 @@ namespace PuntoVenta.CapaPresentacion
             cmd.Parameters.AddWithValue("@PrecioUnitario", Convert.ToDouble(txtPrecioUnit.Text));
             cmd.Parameters.AddWithValue("@Unidades", Convert.ToInt32(txtUnidadesDisp.Text));
             cmd.Parameters.AddWithValue("@imagen", archivoMemoria.GetBuffer());
-            MessageBox.Show("se guardo laa imagen");
+            MessageBox.Show("se guardo la imagen");
             cmd.ExecuteNonQuery();
             cn.CerrarConexion();
-            
+
+            clsMetodosImagen ME = new clsMetodosImagen();
+            dataGridView1.DataSource = ME.llenarDataArticulo();
         }
 
         private void btnCargar_Click(object sender, EventArgs e)
@@ -93,6 +95,33 @@ namespace PuntoVenta.CapaPresentacion
                 pictureBox1.Image = Image.FromFile(dialogo.FileName);
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+            MemoryStream archivoMemoria = new MemoryStream();
+            string rpt;
+
+            ConexionBD cn = new ConexionBD();
+            cn.AbrirConexion();
+            cmd.Connection = cn.AbrirConexion();
+            pictureBox1.Image.Save(archivoMemoria, ImageFormat.Bmp);
+            cmd.CommandText = "sp_ActualizarArticulo";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@NombreArticulo",txtNomArt.Text);
+            cmd.Parameters.AddWithValue("@PrecioUnitario", Convert.ToDouble(txtPrecioUnit.Text));
+            cmd.Parameters.AddWithValue("@Unidades", Convert.ToInt32(txtUnidadesDisp.Text));
+            cmd.Parameters.AddWithValue("@imagen", archivoMemoria.GetBuffer());
+            cmd.Parameters.AddWithValue("@ID", Convert.ToInt32(txtID.Text));
+            MessageBox.Show("se actualizo la imagen");
+            cmd.ExecuteNonQuery();
+            cn.CerrarConexion();
+
+            clsMetodosImagen ME = new clsMetodosImagen();
+            dataGridView1.DataSource = ME.llenarDataArticulo();
+            //txtNumeroImagen.Clear();
         }
     }
 }
