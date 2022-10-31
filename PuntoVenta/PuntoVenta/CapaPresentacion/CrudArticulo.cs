@@ -26,6 +26,8 @@ namespace PuntoVenta.CapaPresentacion
             clsMetodosImagen ME = new clsMetodosImagen();
             dataGridView1.DataSource = ME.llenarDataArticulo();
             dgv.Formato(dataGridView1, 1);
+
+            cmbBuscar.SelectedIndex = 0;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -122,6 +124,29 @@ namespace PuntoVenta.CapaPresentacion
             clsMetodosImagen ME = new clsMetodosImagen();
             dataGridView1.DataSource = ME.llenarDataArticulo();
             //txtNumeroImagen.Clear();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+            ConexionBD cn = new ConexionBD();
+            cn.AbrirConexion();
+            cmd.Connection = cn.AbrirConexion();
+            cmd.CommandText = "sp_EliminarArticulo";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@ID", Convert.ToInt32(txtID.Text));
+            MessageBox.Show("se dio de baja el registro");
+            cmd.ExecuteNonQuery();
+            cn.CerrarConexion();
+
+            clsMetodosImagen ME = new clsMetodosImagen();
+            dataGridView1.DataSource = ME.llenarDataArticulo();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            clsMetodosImagen ME = new clsMetodosImagen();
+            dataGridView1.DataSource = ME.llenarDataBuscar(cmbBuscar.Text);
         }
     }
 }

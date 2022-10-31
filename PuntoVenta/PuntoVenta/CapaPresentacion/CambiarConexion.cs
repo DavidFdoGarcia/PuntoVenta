@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace PuntoVenta.CapaPresentacion
 {
-    public partial class CambiarConexion : Form
+    public partial class CambiarConexion : Base
     {
         public CambiarConexion()
         {
@@ -23,6 +23,11 @@ namespace PuntoVenta.CapaPresentacion
             ConexionBD db = new ConexionBD();
             string nConexion = "Data Source=" + txtServidor.Text + ";Initial Catalog=" + txtBD.Text + ";User ID=" + txtUsuario.Text + ";Password=" + txtPassword.Text + "";
             ConexionBD.cambiarConexion(nConexion);
+        }
+
+        private void CambiarConexion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

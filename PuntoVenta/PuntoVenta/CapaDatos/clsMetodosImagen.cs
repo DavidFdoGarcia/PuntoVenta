@@ -27,5 +27,20 @@ namespace PuntoVenta.CapaDatos
             return Tabla;
             
         }
+
+        public DataTable llenarDataBuscar(string busco)
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "sp_BuscarArticulo";
+            Comando.Parameters.AddWithValue("@Buscar", busco);
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Comando.Connection = Conexion.CerrarConexion();
+            return Tabla;
+
+        }
     }
 }

@@ -17,7 +17,6 @@ C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\bin\Debug\PuntoVenta.p
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.csprojAssemblyReference.cache
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.Base.resources
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CrudArticulo.resources
-C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.CrudArticulos.resources
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.CapaPresentacion.login.resources
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.Properties.Resources.resources
 C:\Users\Gerardo\Desktop\PuntoVenta\PuntoVenta\PuntoVenta\obj\Debug\PuntoVenta.csproj.GenerateResource.cache

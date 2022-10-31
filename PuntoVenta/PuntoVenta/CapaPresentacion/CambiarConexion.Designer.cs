@@ -129,6 +129,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CambiarConexion";
             this.Text = "CambiarConexion";
+            this.Load += new System.EventHandler(this.CambiarConexion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

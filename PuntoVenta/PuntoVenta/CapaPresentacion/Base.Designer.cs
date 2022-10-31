@@ -33,10 +33,9 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(416, 122);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSalir.Location = new System.Drawing.Point(435, 431);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(87, 28);
+            this.btnSalir.Size = new System.Drawing.Size(79, 31);
             this.btnSalir.TabIndex = 0;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -58,6 +57,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnSalir;
+        public System.Windows.Forms.Button btnSalir;
     }
 }

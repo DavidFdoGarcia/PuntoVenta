@@ -44,6 +44,10 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.cmbBuscar = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +62,7 @@
             this.NombreArticulo,
             this.PrecioUnitario,
             this.Unidades});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 63);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(447, 162);
@@ -98,21 +102,21 @@
             // 
             // txtUnidadesDisp
             // 
-            this.txtUnidadesDisp.Location = new System.Drawing.Point(495, 338);
+            this.txtUnidadesDisp.Location = new System.Drawing.Point(485, 385);
             this.txtUnidadesDisp.Name = "txtUnidadesDisp";
             this.txtUnidadesDisp.Size = new System.Drawing.Size(80, 20);
             this.txtUnidadesDisp.TabIndex = 34;
             // 
             // txtPrecioUnit
             // 
-            this.txtPrecioUnit.Location = new System.Drawing.Point(495, 290);
+            this.txtPrecioUnit.Location = new System.Drawing.Point(485, 337);
             this.txtPrecioUnit.Name = "txtPrecioUnit";
             this.txtPrecioUnit.Size = new System.Drawing.Size(80, 20);
             this.txtPrecioUnit.TabIndex = 33;
             // 
             // txtNomArt
             // 
-            this.txtNomArt.Location = new System.Drawing.Point(495, 250);
+            this.txtNomArt.Location = new System.Drawing.Point(485, 297);
             this.txtNomArt.Name = "txtNomArt";
             this.txtNomArt.Size = new System.Drawing.Size(80, 20);
             this.txtNomArt.TabIndex = 32;
@@ -120,7 +124,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(344, 345);
+            this.label3.Location = new System.Drawing.Point(334, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 31;
@@ -129,7 +133,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(344, 297);
+            this.label2.Location = new System.Drawing.Point(334, 344);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 30;
@@ -138,7 +142,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(344, 250);
+            this.label1.Location = new System.Drawing.Point(334, 297);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 13);
             this.label1.TabIndex = 29;
@@ -146,22 +150,23 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(34, 204);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 232);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(224, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 208);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(581, 250);
+            this.txtID.Location = new System.Drawing.Point(571, 297);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(26, 20);
             this.txtID.TabIndex = 35;
+            this.txtID.Visible = false;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(518, 112);
+            this.btnActualizar.Location = new System.Drawing.Point(520, 161);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(170, 23);
             this.btnActualizar.TabIndex = 39;
@@ -171,7 +176,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(518, 66);
+            this.btnGuardar.Location = new System.Drawing.Point(520, 115);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(170, 23);
             this.btnGuardar.TabIndex = 37;
@@ -181,7 +186,7 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(518, 24);
+            this.btnCargar.Location = new System.Drawing.Point(520, 73);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(170, 23);
             this.btnCargar.TabIndex = 36;
@@ -189,11 +194,66 @@
             this.btnCargar.UseVisualStyleBackColor = true;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(520, 202);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(170, 23);
+            this.btnEliminar.TabIndex = 40;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // cmbBuscar
+            // 
+            this.cmbBuscar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbBuscar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbBuscar.FormattingEnabled = true;
+            this.cmbBuscar.Items.AddRange(new object[] {
+            "Memoria USB",
+            "Memoria Micro SD",
+            "Mouse",
+            "Teclado",
+            "Kit Teclado y Mouse",
+            "Cables de Corriente",
+            "Cables USB",
+            "Cables VGA",
+            "Cables HDMI",
+            "Cargadores",
+            "Fuentes de Poder"});
+            this.cmbBuscar.Location = new System.Drawing.Point(183, 21);
+            this.cmbBuscar.Name = "cmbBuscar";
+            this.cmbBuscar.Size = new System.Drawing.Size(147, 21);
+            this.cmbBuscar.TabIndex = 41;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(104, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Buscar";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(367, 21);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(76, 23);
+            this.btnBuscar.TabIndex = 43;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // CrudArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cmbBuscar);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCargar);
@@ -207,7 +267,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "CrudArticulo";
-            this.Text = "CrudArticulo";
+            this.Text = "Inventario";
             this.Load += new System.EventHandler(this.CrudArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -234,5 +294,9 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCargar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.ComboBox cmbBuscar;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }

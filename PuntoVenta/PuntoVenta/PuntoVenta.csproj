@@ -67,12 +67,6 @@
     <Compile Include="CapaPresentacion\CrudArticulo.Designer.cs">
       <DependentUpon>CrudArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="CapaPresentacion\CrudArticulos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaPresentacion\CrudArticulos.Designer.cs">
-      <DependentUpon>CrudArticulos.cs</DependentUpon>
-    </Compile>
     <Compile Include="CapaPresentacion\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\CrudArticulo.resx">
       <DependentUpon>CrudArticulo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaPresentacion\CrudArticulos.resx">
-      <DependentUpon>CrudArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaPresentacion\login.resx">
       <DependentUpon>login.cs</DependentUpon>
